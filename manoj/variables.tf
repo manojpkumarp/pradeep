@@ -1,5 +1,5 @@
 variable "rgname" {
-    description = "resource grouop name"
+    description = "resource group name"
     default     = "CROME_RG_DEV"
 }
 variable "location" {
@@ -8,7 +8,7 @@ variable "location" {
 }
 variable "vnet_name" {
      description = "name for vnet"
-     type=string
+     type  =   any
      default     = "CROME_VNET_DEV"
 }
 variable "address_space" {
@@ -17,10 +17,10 @@ variable "address_space" {
 }
 variable "subnet_name" {
      default     = "CROME_SUBNET_DEV"
-     type=string
+     type        = any
 }
 variable "subnetipaddress" {
       default     = "10.1.0.0/24"
-    #type        = any
-   type=string
+      type        = any
+  
 }
